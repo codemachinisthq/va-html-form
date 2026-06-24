@@ -145,9 +145,6 @@
                 mobile: document.getElementById('mobile').value || "",
                 lang: document.getElementById('lang').value || ""
             };
-
-            console.log("user", tg.initDataUnsafe.user);
-            alert(JSON.stringify(tg.initDataUnsafe.user));
             // This magic line sends data back to your Python backend!
             tg.sendData(JSON.stringify(formData));
             tg.close();
